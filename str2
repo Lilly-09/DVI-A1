@@ -1,0 +1,20 @@
+public class ReplaceCharacter {
+
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+        int index = 7; // Index of the character to replace
+        char newChar = 'X';
+
+        // Convert the String to StringBuilder
+        StringBuilder sb = new StringBuilder(str);
+
+        // Replace the character at the specified index
+        sb.setCharAt(index, newChar);
+
+        // Convert the StringBuilder back to String
+        String modifiedString = sb.toString();
+
+        System.out.println("Original String: " + str);
+        System.out.println("Modified String: " + modifiedString);
+    }
+}
